@@ -11,7 +11,7 @@
   --clr-accent-purple: #6649b8;
   --clr-accent-tealblue: #6ce8f6;
   --transition-speed: 400ms;
-  --gradient: linear-gradient(to right, #6649b8, #6ce8f6)
+  --gradient: linear-gradient(to right, #6649b8, #6ce8f6);
 }
 
 /* ************** Base Styles ************** */
@@ -28,8 +28,9 @@ html,
 body {
   font-family: "Roboto Mono", monospace, sans-serif, Arial, Helvetica;
   letter-spacing: 1px;
+  line-height: 1.6;
   scroll-behavior: smooth;
-  color: var(--text-primary)
+  color: var(--text-primary);
 }
 
 a {
@@ -50,13 +51,9 @@ li {
 }
 
 h3 {
-    color: var(--clr-accent-hotpink);
-    text-align: center;
-    margin-bottom: .5em;
-}
-
-.section-title {
-    color: var(--text-secondary);
+  color: var(--clr-accent-hotpink);
+  text-align: center;
+  margin-bottom: 0.5em;
 }
 
 /* ************ Accent colors ************ */
@@ -90,6 +87,10 @@ body::-webkit-scrollbar-thumb {
 
 .italic {
   font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 /* **************** Nav ****************  */
@@ -185,13 +186,19 @@ main {
   margin-left: 5rem;
 }
 
+.section-title {
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2rem;
+}
+
 /* **************** Intro ****************  */
 
 #intro {
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 1.6;
   background: var(--bg-secondary);
   min-height: 100vh;
   padding-bottom: 2em;
@@ -203,15 +210,16 @@ main {
   justify-content: center;
   align-items: flex-start;
   width: 60%;
+  max-width: 860px;
 }
 
-.intro-wrap {
+.intro-bio-wrap {
   margin-bottom: 1.5rem;
 }
 
 .intro-title {
   font-size: 6rem;
-  color: var(--clr-accent-tealblue)
+  color: var(--clr-accent-tealblue);
 }
 
 .intro-bio {
@@ -235,58 +243,93 @@ main {
 
 #skills {
   background: var(--bg-main);
-  padding: 4em;
-}
-
-.skills-title {
-    text-align: center;
-    margin-bottom: 2em;
+  padding: 4em 0;
 }
 
 .skills-container {
   display: flex;
   justify-content: center;
   gap: 2em;
-  width: 100%;
 }
 
 .gradient-wrap {
-    background: var(--gradient);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width: 100%; */
+  background: var(--gradient);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .front-end,
 .back-end,
 .other,
 .software {
-    background: var(--bg-secondary);
-    padding: 2em;
-    border-radius: 10px;
-    width: 99%;
-    height: 99%;
+  background: var(--bg-secondary);
+  padding: 2em;
+  border-radius: 10px;
+  width: 98%;
+  height: 98%;
 }
 
-
-/* **************** Skills ****************  */
+/* **************** Projects ****************  */
 
 #projects {
   background: var(--bg-secondary);
+  padding: 4em 0;
 }
 
-/* **************** Skills ****************  */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.projects-wrap {
+  display: flex;
+  width: 80%;
+}
+
+.projects-img-wrap {
+  width: 300px;
+}
+
+.projects-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+/* **************** Education ****************  */
 
 #education {
   background: var(--bg-main);
+  padding: 4em 0;
+  line-height: 1.6;
 }
 
-/* **************** Skills ****************  */
+.education-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.school-wrap {
+  margin-bottom: 2em;
+}
+
+.school-title {
+  color: var(--clr-accent-hotpink);
+}
+
+.school {
+  margin: 1em 0;
+}
+
+/* **************** Contact ****************  */
 
 #contact {
   background: var(--bg-secondary);
+  padding: 4em 0;
 }
 
 /* **************** Small screens ****************  */
