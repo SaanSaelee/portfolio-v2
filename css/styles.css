@@ -1,0 +1,336 @@
+/* ************** Root Styles ************** */
+
+:root {
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-main: #212128;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --clr-accent-pink: #ff7eee;
+  --clr-accent-hotpink: #df49a6;
+  --clr-accent-purple: #6649b8;
+  --clr-accent-tealblue: #6ce8f6;
+  --transition-speed: 400ms;
+  --gradient: linear-gradient(to right, #6649b8, #6ce8f6)
+}
+
+/* ************** Base Styles ************** */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Roboto Mono", monospace, sans-serif, Arial, Helvetica;
+  letter-spacing: 1px;
+  scroll-behavior: smooth;
+  color: var(--text-primary)
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+h3 {
+    color: var(--clr-accent-hotpink);
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+.section-title {
+    color: var(--text-secondary);
+}
+
+/* ************ Accent colors ************ */
+
+.accent-hotpink {
+  color: var(--clr-accent-hotpink);
+}
+.accent-purple {
+  color: var(--clr-accent-purple);
+}
+
+.accent-tealblue {
+  color: var(--clr-accent-tealblue);
+}
+
+/* ************ Scrollbar ************ */
+
+body::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--clr-accent-purple);
+}
+
+/* ************ Utility classes ************ */
+
+.italic {
+  font-style: italic;
+}
+
+/* **************** Nav ****************  */
+
+.navbar {
+  background-color: var(--bg-primary);
+  transition: width 200ms ease;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-item__themify {
+  display: none;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link svg {
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+/* **************** Logo ****************  */
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1.5rem;
+}
+
+.logo svg {
+  transform: rotate(0deg);
+  transition: transform var(--transition-speed);
+}
+
+.navbar:hover .logo svg {
+  transform: rotate(-180deg);
+}
+
+/* **************** Font Awesome ****************  */
+
+.fa-primary {
+  color: var(--clr-accent-pink);
+}
+
+.fa-secondary {
+  color: var(--clr-accent-hotpink);
+}
+
+.fa-primary,
+.fa-secondary {
+  transition: var(--transition-speed);
+}
+
+/* **************** Main ****************  */
+
+main {
+  margin-left: 5rem;
+}
+
+/* **************** Intro ****************  */
+
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.6;
+  background: var(--bg-secondary);
+  min-height: 100vh;
+  padding-bottom: 2em;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+}
+
+.intro-wrap {
+  margin-bottom: 1.5rem;
+}
+
+.intro-title {
+  font-size: 6rem;
+  color: var(--clr-accent-tealblue)
+}
+
+.intro-bio {
+  font-size: 1.3rem;
+  color: var(--text-secondary);
+  margin-bottom: 1em;
+}
+
+.intro-sub-bio-wrap {
+  display: flex;
+  gap: 2rem;
+  width: 80%;
+}
+
+.intro-sub-bio {
+  font-size: 0.9rem;
+  margin: 0 auto;
+}
+
+/* **************** Skills ****************  */
+
+#skills {
+  background: var(--bg-main);
+  padding: 4em;
+}
+
+.skills-title {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  width: 100%;
+}
+
+.gradient-wrap {
+    background: var(--gradient);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.front-end,
+.back-end,
+.other,
+.software {
+    background: var(--bg-secondary);
+    padding: 2em;
+    border-radius: 10px;
+    width: 99%;
+    height: 99%;
+}
+
+
+/* **************** Skills ****************  */
+
+#projects {
+  background: var(--bg-secondary);
+}
+
+/* **************** Skills ****************  */
+
+#education {
+  background: var(--bg-main);
+}
+
+/* **************** Skills ****************  */
+
+#contact {
+  background: var(--bg-secondary);
+}
+
+/* **************** Small screens ****************  */
+
+@media only screen and (max-width: 599px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  main {
+    margin: 0;
+  }
+}
+
+/* **************** Large screens ****************  */
+
+@media (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+    transition: opacity var(--transition-speed);
+  }
+}
