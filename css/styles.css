@@ -401,8 +401,7 @@ body::-webkit-scrollbar-thumb {
 .projects-img:hover,
 .projects-img:focus {
   transform: translateY(-20px);
-  border: 7px solid var(--clr-accent-purple)
-
+  border: 7px solid var(--clr-accent-purple);
 }
 
 .project-title {
