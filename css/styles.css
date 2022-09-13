@@ -250,6 +250,22 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
 }
 
+.resume-btn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background: var(--bg-primary);
+  color: var(--clr-accent-tealblue);
+  border: 2px solid var(--clr-accent-tealblue);
+  border-radius: 10px;
+  padding: .5em 1.5em;
+  transition: var(--transition-speed);
+}
+
+.resume-btn:hover {
+  background: var(--clr-accent-purple);
+}
+
 /* **************** Skills ****************  */
 
 #skills {
@@ -426,7 +442,7 @@ body::-webkit-scrollbar-thumb {
 .projects-img:hover,
 .projects-img:focus {
   transform: translateY(-20px);
-  border: 5px solid var(--clr-accent-purple);
+  border: 5px solid var(--clr-accent-tealblue);
 }
 
 .project-title {
