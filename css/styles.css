@@ -262,7 +262,8 @@ body::-webkit-scrollbar-thumb {
   transition: var(--transition-speed);
 }
 
-.resume-btn:hover {
+.resume-btn:hover,
+.resume-btn:focus {
   background: var(--clr-accent-purple);
 }
 
@@ -586,7 +587,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .resume-btn {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   /* Education */
@@ -599,13 +600,11 @@ body::-webkit-scrollbar-thumb {
   .contact-container {
     padding: 2em;
   }
-  
+
   .profile-pic-wrap {
     width: 50%;
   }
 
-
-  /* Footer */
   footer p {
     text-align: center;
     margin-bottom: 0.5em;
@@ -650,6 +649,11 @@ body::-webkit-scrollbar-thumb {
   .certs-wrap {
     padding: 4em 2em;
   }
+
+  /* Footer */
+  .footer-container {
+    padding-bottom: 2em;
+  }
 }
 
 /* **************** Large screens ****************  */
@@ -672,6 +676,7 @@ body::-webkit-scrollbar-thumb {
     transition: opacity var(--transition-speed);
   }
 
+  /* Intro */
   .intro-title {
     line-height: 1;
     margin-bottom: 0.3em;
