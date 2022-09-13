@@ -582,6 +582,10 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 0.5em;
   }
 
+  .intro-sub-bio-wrap {
+    gap: 1rem;
+  }
+
   .intro-sub-bio {
     font-size: 0.8rem;
   }
