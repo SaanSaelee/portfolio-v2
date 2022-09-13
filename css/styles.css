@@ -219,7 +219,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 60%;
+  width: 70%;
   max-width: 860px;
 }
 
@@ -247,14 +247,6 @@ body::-webkit-scrollbar-thumb {
 .intro-sub-bio {
   font-size: 0.9rem;
   margin: 0 auto;
-}
-
-.cursor-blink::after {
-  content: '';
-  width: 5px;
-  height: 20px;
-  background: var(--clr-accent-purple);
-  display: inline-block;
 }
 
 /* **************** Skills ****************  */
@@ -521,8 +513,6 @@ body::-webkit-scrollbar-thumb {
   transform: translateY(-10px);
   color: var(--clr-accent-tealblue);
 }
-
-
 
 /* **************** Footer ****************  */
 
