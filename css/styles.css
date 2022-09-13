@@ -402,12 +402,13 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-.projects-sample {
+.projects-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2em;
   flex-wrap: wrap;
+  padding: 0 1em;
 }
 
 .projects-img {
@@ -556,9 +557,11 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
   }
 
-  main {
+  main,
+  footer {
     margin: 0;
   }
+
 }
 
 /* **************** Large screens ****************  */
