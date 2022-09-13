@@ -193,7 +193,7 @@ body::-webkit-scrollbar-thumb {
   transition: var(--transition-speed);
 }
 
-/* **************** Section headings ****************  */
+/* **************** Section global settings ****************  */
 
 .section-title {
   color: var(--text-secondary);
@@ -219,12 +219,13 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 70%;
   max-width: 860px;
+  width: 70%;
 }
 
 .intro-bio-wrap {
   margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 .intro-title {
@@ -241,7 +242,7 @@ body::-webkit-scrollbar-thumb {
 .intro-sub-bio-wrap {
   display: flex;
   gap: 2rem;
-  width: 80%;
+  width: 100%;
 }
 
 .intro-sub-bio {
@@ -463,6 +464,16 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+.certs-content-wrap,
+.school-content-wrap {
+  max-width: 806px;
+  margin: 0 auto;
+}
+
+.scrum {
+  margin-bottom: 1em;
+}
+
 /* **************** Contact ****************  */
 
 #contact {
@@ -535,6 +546,39 @@ body::-webkit-scrollbar-thumb {
   font-size: 0.8rem;
 }
 
+/* **************** Very Small screens (iphoneXR ****************  */
+
+@media (max-width: 415px) {
+  /* Intro */
+  .intro-container {
+  }
+
+  .intro-title {
+    font-size: 5rem;
+    color: var(--clr-accent-tealblue);
+  }
+
+  .intro-bio {
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+  }
+
+  .intro-sub-bio {
+    font-size: 0.8rem;
+  }
+
+  /* Education */
+  .school-wrap,
+  .certs-wrap {
+    padding: 4em 3em;
+  }
+
+  footer p {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+}
+
 /* **************** Small screens ****************  */
 
 @media only screen and (max-width: 599px) {
@@ -563,11 +607,23 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
   }
 
+  .intro-title {
+    line-height: 1;
+    margin-bottom: 0.3em;
+  }
+
+  /* Education */
+  .school-wrap,
+  .certs-wrap {
+    padding: 4em 4em;
+  }
+
 }
 
 /* **************** Large screens ****************  */
 
 @media (min-width: 600px) {
+  /* Navbar */
   .navbar {
     top: 0;
     width: 5rem;
@@ -582,5 +638,17 @@ body::-webkit-scrollbar-thumb {
   .navbar:hover .link-text {
     display: inline;
     transition: opacity var(--transition-speed);
+  }
+
+  .intro-title {
+    line-height: 1;
+    margin-bottom: 0.3em;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* Intro */
+  .intro-sub-bio-wrap {
+    width: 80%;
   }
 }
