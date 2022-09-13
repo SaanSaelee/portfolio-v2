@@ -200,13 +200,6 @@ body::-webkit-scrollbar-thumb {
   font-weight: 400;
 }
 
-.section-title::after {
-  border-bottom: #00d0ff;
-  width: 50%;
-  opacity: 0.5;
-  color: red;
-}
-
 /* **************** Intro ****************  */
 
 #intro {
@@ -398,15 +391,23 @@ body::-webkit-scrollbar-thumb {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  transition: transform 300ms ease;
+  transition: 300ms ease;
   background: var(--bg-primary);
-  border-radius: 10px;
+  border-radius: 12px;
   border: 7px solid var(--bg-primary);
+  margin-bottom: .3em;
 }
 
 .projects-img:hover,
 .projects-img:focus {
   transform: translateY(-20px);
+  border: 7px solid var(--clr-accent-purple)
+
+}
+
+.project-title {
+  color: var(--text-primary);
+  margin-left: 7px;
 }
 
 /* **************** Education ****************  */
