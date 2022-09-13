@@ -546,7 +546,8 @@ body::-webkit-scrollbar-thumb {
   }
 
   .logo {
-    display: none;
+    display: inline-block;
+    margin: 0;
   }
 
   .navbar-nav {
