@@ -572,6 +572,10 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 415px) {
   /* Intro */
+  .intro-container {
+    width: 80%;
+  }
+
   .intro-title {
     font-size: 5rem;
     margin-top: 1em;
