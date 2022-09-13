@@ -559,7 +559,7 @@ body::-webkit-scrollbar-thumb {
   background: var(--bg-secondary);
 }
 
-.footer p {
+.footer-container {
   text-align: center;
   width: 90%;
 }
@@ -616,11 +616,6 @@ body::-webkit-scrollbar-thumb {
   .profile-pic-wrap {
     width: 50%;
   }
-
-  footer p {
-    text-align: center;
-    margin-bottom: 0.5em;
-  }
 }
 
 /* **************** Small screens ****************  */
@@ -665,6 +660,10 @@ body::-webkit-scrollbar-thumb {
   /* Footer */
   .footer-container {
     padding-bottom: 2em;
+  }
+
+  footer p {
+    margin-bottom: 0.5em;
   }
 }
 
