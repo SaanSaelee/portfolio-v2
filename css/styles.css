@@ -571,6 +571,10 @@ body::-webkit-scrollbar-thumb {
 /* **************** Very Small screens (iphoneXR ****************  */
 
 @media (max-width: 415px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
   /* Intro */
   .intro-container {
     width: 80%;
