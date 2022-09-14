@@ -6,7 +6,7 @@
   --bg-main: #212128;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
-  --text-accent-off-white: #ececec;
+  --clr-accent-off-white: #ececec;
   --clr-accent-pink: #ff7eee;
   --clr-accent-hotpink: #df49a6;
   --clr-accent-purple: #6649b8;
@@ -296,6 +296,8 @@ body::-webkit-scrollbar-thumb {
   width: 90%;
   padding: 0 0.5em;
   gap: 2em;
+  transform: translateX(150px);
+  opacity: 0;
 }
 
 .skills-container .skills-box {
@@ -427,6 +429,8 @@ body::-webkit-scrollbar-thumb {
   gap: 2em;
   flex-wrap: wrap;
   padding: 0 1em;
+  transform: translateX(-150px);
+  opacity: 0;
 }
 
 .projects-img {
@@ -518,7 +522,7 @@ body::-webkit-scrollbar-thumb {
 
 .profile-pic-wrap {
   position: relative;
-  width: 20%;
+  width: 15%;
   margin-bottom: 2em;
 }
 
@@ -566,6 +570,13 @@ body::-webkit-scrollbar-thumb {
 
 .copyright {
   font-size: 0.8rem;
+}
+
+/********************* Animation ********************/
+.fade-in {
+  transform: translateX(0);
+  transition: 1.5s ease;
+  opacity: 1;
 }
 
 /* **************** Very Small screens (iphoneXR ****************  */
