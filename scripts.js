@@ -2,9 +2,9 @@ const skillsWrap = document.querySelectorAll(".skills-box-wrap");
 const projectsWrap = document.querySelectorAll(".projects-wrap");
 
 const options = {
-  root: null,
-  threshold: 0,
-  rootMargin: "-200px",
+    // will fade-in only after scrolling into 50% of the div, but not before.
+  threshold: 0.5,
+    // rootMargin: "-200px",
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
@@ -12,7 +12,7 @@ const observer = new IntersectionObserver((entries, observer) => {
     if (!entry.isIntersecting) {
       return;
     }
-    console.log(entry);
+    // console.log(entry);
     entry.target.classList.toggle("fade-in");
     observer.unobserve(entry.target);
   });
@@ -23,5 +23,5 @@ skillsWrap.forEach((skill) => {
 });
 
 projectsWrap.forEach((skill) => {
-    observer.observe(skill);
-  });
+  observer.observe(skill);
+});
