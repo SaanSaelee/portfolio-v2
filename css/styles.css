@@ -296,7 +296,7 @@ body::-webkit-scrollbar-thumb {
   width: 90%;
   padding: 0 0.5em;
   gap: 2em;
-  transform: translateX(150px);
+  transform: translateX(100px);
   opacity: 0;
 }
 
@@ -429,7 +429,7 @@ body::-webkit-scrollbar-thumb {
   gap: 2em;
   flex-wrap: wrap;
   padding: 0 1em;
-  transform: translateX(-150px);
+  transform: translateX(-100px);
   opacity: 0;
 }
 
