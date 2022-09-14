@@ -489,6 +489,7 @@ body::-webkit-scrollbar-thumb {
 .school-content-wrap {
   max-width: 806px;
   margin: 0 auto;
+  opacity: 0;
 }
 
 .certs-wrap {

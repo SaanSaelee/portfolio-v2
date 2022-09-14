@@ -1,10 +1,12 @@
 const skillsWrap = document.querySelectorAll(".skills-box-wrap");
 const projectsWrap = document.querySelectorAll(".projects-wrap");
+const schoolWrap = document.querySelectorAll(".school-content-wrap");
+const certsWrap = document.querySelectorAll(".certs-content-wrap");
 
 const options = {
-    // will fade-in only after scrolling into 50% of the div, but not before.
-  threshold: 0.5,
-    // rootMargin: "-200px",
+  // will fade-in only after scrolling into 40% of the div, but not before.
+  threshold: 0.4,
+  // rootMargin: "-200px",
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
@@ -23,5 +25,13 @@ skillsWrap.forEach((skill) => {
 });
 
 projectsWrap.forEach((skill) => {
+  observer.observe(skill);
+});
+
+schoolWrap.forEach((skill) => {
+  observer.observe(skill);
+});
+
+certsWrap.forEach((skill) => {
   observer.observe(skill);
 });
