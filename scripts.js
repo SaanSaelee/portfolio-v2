@@ -1,12 +1,16 @@
-const skillsWrap = document.querySelectorAll(".skills-box-wrap");
-const projectsWrap = document.querySelectorAll(".projects-wrap");
-const schoolWrap = document.querySelectorAll(".school-content-wrap");
-const certsWrap = document.querySelectorAll(".certs-content-wrap");
+const skills = document.querySelectorAll(".skills-title, .skills-box");
+const projects = document.querySelectorAll(".projects-title, .project");
+const schools = document.querySelectorAll(
+  ".education-title, .school, .certs-title, .certs"
+);
+const contacts = document.querySelectorAll(
+  ".profile-pic, .contact-title, .contact-details"
+);
 
 const options = {
-  // will fade-in only after scrolling into 40% of the div, but not before.
+  root: null,
   threshold: 0.4,
-  // rootMargin: "-200px",
+  rootMargin: "0px",
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
@@ -14,24 +18,24 @@ const observer = new IntersectionObserver((entries, observer) => {
     if (!entry.isIntersecting) {
       return;
     }
-    // console.log(entry);
+    console.log(entry);
     entry.target.classList.toggle("fade-in");
     observer.unobserve(entry.target);
   });
 }, options);
 
-skillsWrap.forEach((skill) => {
+skills.forEach((skill) => {
   observer.observe(skill);
 });
 
-projectsWrap.forEach((skill) => {
-  observer.observe(skill);
+projects.forEach((project) => {
+  observer.observe(project);
 });
 
-schoolWrap.forEach((skill) => {
-  observer.observe(skill);
+schools.forEach((school) => {
+  observer.observe(school);
 });
 
-certsWrap.forEach((skill) => {
-  observer.observe(skill);
+contacts.forEach((contact) => {
+  observer.observe(contact);
 });
