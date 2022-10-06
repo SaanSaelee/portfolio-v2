@@ -61,5 +61,5 @@ window.addEventListener("scroll", () => {
     moon.style.top = value * 0.85 + "px";
     mountains_behind.style.top = value * 0.5 + "px";
     heroTitle.style.marginRight = value * 4 + "px";
-    heroTitle.style.marginTop = value * .5 + "px";
+    heroTitle.style.marginTop = value * 0.5 + "px";
 });
