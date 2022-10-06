@@ -677,12 +677,9 @@ body::-webkit-scrollbar-thumb {
     }
 
     .intro-sub-bio-wrap {
-        gap: 1rem;
+        gap: 2rem;
     }
 
-    .intro-sub-bio {
-        font-size: 0.8rem;
-    }
 
     /* Skills */
     .skills-container .skills-box {
