@@ -675,7 +675,6 @@ body::-webkit-scrollbar-thumb {
     }
 
     .intro-sub-bio-wrap {
-        flex-direction: column;
         gap: 1rem;
     }
 
@@ -739,6 +738,14 @@ body::-webkit-scrollbar-thumb {
     .hero__title {
         line-height: 1;
         margin-bottom: 0.3em;
+    }
+
+    .intro-bio {
+        font-size: 1.5rem;
+    }
+
+    .intro-sub-bio-wrap {
+        flex-direction: column;
     }
 
     /* Education */
