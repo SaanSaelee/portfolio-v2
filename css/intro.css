@@ -1,0 +1,31 @@
+/* **************** Intro ****************  */
+
+#intro {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-secondary);
+    padding: 4em 0;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1080px;
+}
+
+.intro-bio-wrap {
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.intro-bio {
+    font-size: 2rem;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}

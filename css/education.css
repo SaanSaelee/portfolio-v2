@@ -1,0 +1,45 @@
+/* **************** Education ****************  */
+
+#education {
+    position: relative;
+    padding: 3em 0;
+}
+
+.education-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.school-wrap {
+    margin-bottom: 3em;
+}
+
+.school-title {
+    color: var(--clr-accent-hotpink);
+}
+
+.school {
+    margin: 1em 0;
+}
+
+.school-wrap,
+.certs-wrap {
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    padding: 5em 3em;
+}
+
+.certs-content-wrap,
+.school-content-wrap {
+    max-width: 806px;
+    margin: 0 auto;
+}
+
+.certs-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.scrum {
+    margin-bottom: 1em;
+}

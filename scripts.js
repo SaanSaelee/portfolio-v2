@@ -1,13 +1,19 @@
-const intro = document.querySelectorAll(
-    ".intro-bio, .intro-sub-bio__left, .intro-sub-bio__right"
-);
+// Dynamic Copyright Year
+const copyright = document.querySelector(".copyright-year");
+const d = new Date();
+const copyrightYear = d.getFullYear();
+
+copyright.innerHTML = copyrightYear;
+
+// Intersection Observer
+const intro = document.querySelector(".intro-bio");
 const skills = document.querySelectorAll(".skills-title, .skills-box");
 const projects = document.querySelectorAll(".projects-title, .project");
 const schools = document.querySelectorAll(
     ".education-title, .school, .certs-title, .certs"
 );
 const contacts = document.querySelectorAll(
-    ".profile-pic, .contact-title, .contact-details"
+    ".profile-pic, .contact-title, .contact-bio, .contact-details"
 );
 
 const options = {
@@ -27,9 +33,7 @@ const observer = new IntersectionObserver((entries, observer) => {
     });
 }, options);
 
-intro.forEach((item) => {
-    observer.observe(item);
-});
+observer.observe(intro);
 
 skills.forEach((skill) => {
     observer.observe(skill);
