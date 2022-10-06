@@ -683,8 +683,9 @@ body::-webkit-scrollbar-thumb {
         font-size: 0.8rem;
     }
 
-    .resume-btn {
-        font-size: 0.8rem;
+    /* Skills */
+    .skills-container .skills-box {
+        width: 100%;
     }
 
     /* Education */
@@ -696,6 +697,10 @@ body::-webkit-scrollbar-thumb {
     /* Contact */
     .contact-container {
         padding: 2em;
+    }
+
+    .resume-btn {
+        font-size: 0.8rem;
     }
 
     .profile-pic-wrap {
