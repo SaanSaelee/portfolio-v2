@@ -250,7 +250,8 @@ body::-webkit-scrollbar-thumb {
 
 .hero__title {
     position: absolute;
-    right: -350px;
+    top: 200px;
+    right: -400px;
     color: var(--clr-accent-tealblue);
     white-space: nowrap;
     font-size: 6em;
@@ -477,7 +478,7 @@ body::-webkit-scrollbar-thumb {
 .projects-img:hover,
 .projects-img:focus {
     transform: translateY(-20px);
-    border: 5px solid var(--clr-accent-tealblue);
+    border: 5px solid var(--clr-accent-hotpink);
 }
 
 .project-title {
@@ -624,18 +625,13 @@ body::-webkit-scrollbar-thumb {
 
 /********************* Animation Fade-in********************/
 
+.intro-bio,
+.intro-sub-bio__left,
+.intro-sub-bio__right,
 .skills-front-end,
-.skills-back-end {
-    opacity: 0;
-    transform: translateX(-50px);
-}
-
+.skills-back-end,
 .skills-other,
-.skills-software {
-    opacity: 0;
-    transform: translateX(50px);
-}
-
+.skills-software,
 .skills-title,
 .projects-title,
 .project,
@@ -679,6 +675,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .intro-sub-bio-wrap {
+        flex-direction: column;
         gap: 1rem;
     }
 

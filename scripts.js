@@ -1,3 +1,6 @@
+const intro = document.querySelectorAll(
+    ".intro-bio, .intro-sub-bio__left, .intro-sub-bio__right"
+);
 const skills = document.querySelectorAll(".skills-title, .skills-box");
 const projects = document.querySelectorAll(".projects-title, .project");
 const schools = document.querySelectorAll(
@@ -23,6 +26,10 @@ const observer = new IntersectionObserver((entries, observer) => {
         observer.unobserve(entry.target);
     });
 }, options);
+
+intro.forEach((item) => {
+    observer.observe(item);
+});
 
 skills.forEach((skill) => {
     observer.observe(skill);
@@ -53,5 +60,6 @@ window.addEventListener("scroll", () => {
     stars.style.left = value * 0.25 + "px";
     moon.style.top = value * 0.85 + "px";
     mountains_behind.style.top = value * 0.5 + "px";
-    heroTitle.style.marginRight = value * 2 + "px";
+    heroTitle.style.marginRight = value * 4 + "px";
+    heroTitle.style.marginTop = value * .5 + "px";
 });
