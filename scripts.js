@@ -58,12 +58,28 @@ let moon = document.getElementById("moon");
 let mountains_behind = document.getElementById("mountains_behind");
 let heroTitle = document.getElementById("hero__title");
 let mountains_front = document.getElementById("mountains_front");
+let bird1 = document.getElementById("bird1");
+let bird2 = document.getElementById("bird2");
 
 window.addEventListener("scroll", () => {
     let value = window.scrollY;
+
     stars.style.left = value * 0.25 + "px";
     moon.style.top = value * 0.85 + "px";
     mountains_behind.style.top = value * 0.5 + "px";
+    mountains_front.style.top = value * 3 + "px";
     heroTitle.style.marginRight = value * 4 + "px";
     heroTitle.style.marginTop = value * 0.5 + "px";
+    bird1.style.top = value * -1.5 + "px";
+    bird1.style.left = value * 2 + "px";
+    bird2.style.top = value * -1.5 + "px";
+    bird2.style.left = value * -5 + "px";
+});
+
+$(window).scroll(function () {
+    //if I scroll more than 1000px...
+    if ($(window).scrollTop() > 500) {
+        //Then change the elements position to fixed:
+        $("#mountains_front").css("position", "fixed");
+    }
 });

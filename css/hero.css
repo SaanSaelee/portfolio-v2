@@ -16,8 +16,8 @@
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #1c0522, transparent);
-    z-index: 1000;
+    /* background: linear-gradient(to top, #1c0522, transparent); */
+    z-index: 9;
 }
 
 .hero .hero__img {
@@ -32,6 +32,17 @@
 .hero #moon {
     mix-blend-mode: screen;
 }
+
+.hero .bird {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 20;
+}
+
 
 .hero #mountains_front {
     z-index: 10;
