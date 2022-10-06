@@ -269,7 +269,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     background: var(--bg-secondary);
-    padding: 3em 0;
+    padding: 4em 0;
 }
 
 .intro-container {
@@ -278,7 +278,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: flex-start;
     border-radius: 10px;
-    padding: 3em 0;
+    padding: 7em 0;
     width: 70%;
     max-width: 1080px;
 }
@@ -320,7 +320,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     background: var(--bg-secondary);
-    padding: 3em 0;
+    padding: 7em 0;
     width: 90%;
     border-radius: 10px;
 }
@@ -450,7 +450,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .projects-container {
-    padding: 3em 0;
+    padding: 7em 0;
     background: var(--bg-secondary);
     width: 90%;
     border-radius: 10px;
@@ -514,7 +514,7 @@ body::-webkit-scrollbar-thumb {
 .school-wrap,
 .certs-wrap {
     background: var(--bg-secondary);
-    padding: 4em 6em;
+    padding: 7em 6em;
     border-radius: 10px;
 }
 
@@ -550,7 +550,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     background: var(--bg-secondary);
     border-radius: 10px;
-    padding: 4em;
+    padding: 7em;
     margin-bottom: 3em;
     width: 90%;
 }
@@ -589,8 +589,8 @@ body::-webkit-scrollbar-thumb {
 
 .resume-btn {
     position: absolute;
-    top: 1em;
-    right: 1em;
+    top: 2em;
+    right: 2em;
     background: var(--bg-primary);
     color: var(--clr-accent-tealblue);
     border: 2px solid var(--clr-accent-tealblue);
