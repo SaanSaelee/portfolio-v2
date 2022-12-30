@@ -20,14 +20,13 @@ const options = {
     root: null,
     threshold: 0.4,
     rootMargin: "0px",
-};
-
+};  
+            
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
         if (!entry.isIntersecting) {
             return;
         }
-        console.log(entry);
         entry.target.classList.toggle("fade-in");
         observer.unobserve(entry.target);
     });
