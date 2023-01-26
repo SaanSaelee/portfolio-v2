@@ -22,7 +22,7 @@
 .skills-box-wrap {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
     width: 90%;
     padding: 0 0.5em;
@@ -32,12 +32,12 @@
 .skills-container .skills-box {
     position: relative;
     width: 220px;
-    height: 300px;
+    /* min-height: 250px; */
     color: var(--text-accent-off-white);
     background: var(--bg-secondary);
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     border-radius: 10px;
 }
 
