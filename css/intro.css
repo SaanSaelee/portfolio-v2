@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     background: var(--bg-secondary);
+    opacity: .9;
     padding: 4em 0;
 }
 

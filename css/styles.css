@@ -145,6 +145,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     padding: 4em;
     background: var(--bg-secondary);
+    opacity: .9;
 }
 
 .footer-container {

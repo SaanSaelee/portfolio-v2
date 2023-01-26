@@ -25,6 +25,7 @@
 .school-wrap,
 .certs-wrap {
     background: var(--bg-secondary);
+    opacity: .9;
     border-radius: 10px;
     padding: 5em 3em;
 }

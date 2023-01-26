@@ -9,6 +9,7 @@
 
 .projects-container {
     background: var(--bg-secondary);
+    opacity: .9;
     width: 90%;
     border-radius: 10px;
 }
