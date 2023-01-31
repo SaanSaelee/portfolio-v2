@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @import url("nav.css");
 @import url("hero.css");
 @import url("intro.css");
@@ -39,7 +41,7 @@
 
 html,
 body {
-    font-family: "Roboto Mono", monospace, sans-serif, Arial, Helvetica;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     line-height: 1.6;
     scroll-behavior: smooth;
