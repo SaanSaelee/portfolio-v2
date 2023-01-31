@@ -127,8 +127,6 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     margin-bottom: 1em;
     font-size: 2rem;
-    font-weight: 500;
-    /* text-transform: uppercase; */
 }
 
 /* .intro-container, */
@@ -191,7 +189,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 415px) {
     .section-title {
-        font-size: 1.8rem;
+        /* font-size: 1.8rem; */
     }
 
     .hero__title {
