@@ -16,6 +16,11 @@
 
 .school-title {
     color: var(--clr-accent-hotpink);
+    font-weight: normal;
+}
+
+.school {
+    margin-bottom: .5em;
 }
 
 .school-wrap,
@@ -23,13 +28,13 @@
     background: var(--bg-secondary);
     opacity: .9;
     border-radius: 10px;
-    padding: 5em 3em;
 }
 
 .school-content-wrap, 
 .certs-content-wrap {
     max-width: 806px;
     margin: 0 auto;
+    width: 90%;
 }
 
 .certs-wrap {

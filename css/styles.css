@@ -132,14 +132,16 @@ body::-webkit-scrollbar-thumb {
 
 .skills-container,
 .projects-container,
-.contact-container {
-    padding: 5em 1em;
+.contact-container,
+.school-wrap,
+.certs-wrap {
+    padding: 2em 1em;
 }
 
 .skills-container,
 .projects-container,
 .school-wrap, 
-.certs-content-wrap {
+.certs-wrap {
     position: relative;
     display: flex;
     flex-direction: column;
