@@ -30,8 +30,8 @@
     padding: 5em 3em;
 }
 
-.certs-content-wrap,
-.school-content-wrap {
+.school-content-wrap, 
+.certs-content-wrap {
     max-width: 806px;
     margin: 0 auto;
 }

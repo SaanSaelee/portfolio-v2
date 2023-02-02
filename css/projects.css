@@ -1,7 +1,7 @@
 /* **************** Projects ****************  */
 
 #projects {
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,9 +18,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
     flex-wrap: wrap;
     padding: 0 1em;
+    gap: 2em;
 }
 
 .projects-img {
@@ -42,6 +42,6 @@
 
 .project-title {
     color: var(--clr-accent-off-white);
-    margin-left: 7px;
+    /* margin-left: 7px; */
     text-align: center;
 }

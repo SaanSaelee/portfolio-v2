@@ -129,11 +129,21 @@ body::-webkit-scrollbar-thumb {
     width: 90%;
 }
 
-/* .intro-container, */
 .skills-container,
 .projects-container,
 .contact-container {
     padding: 5em 1em;
+}
+
+.skills-container,
+.projects-container,
+.school-content-wrap, 
+.certs-content-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* **************** Footer ****************  */

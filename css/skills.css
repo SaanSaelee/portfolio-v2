@@ -8,11 +8,6 @@
 }
 
 .skills-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: var(--bg-secondary);
     opacity: .9;
     width: 90%;
