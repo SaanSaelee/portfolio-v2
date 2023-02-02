@@ -31,11 +31,8 @@
 }
 
 .contact-bio-wrap {
-    width: 70%;
+    width: 90%;
     max-width: 1080px;
-}
-
-.contact-bio-wrap {
     margin: 1.5em 0;
 }
 
@@ -65,19 +62,3 @@
     color: var(--clr-accent-tealblue);
 }
 
-.resume-btn {
-    position: absolute;
-    top: 2em;
-    right: 2em;
-    background: var(--bg-primary);
-    color: var(--clr-accent-tealblue);
-    border: 2px solid var(--clr-accent-tealblue);
-    border-radius: 10px;
-    padding: 0.5em 1.5em;
-    transition: var(--transition-speed);
-}
-
-.resume-btn:hover,
-.resume-btn:focus {
-    background: var(--clr-accent-hotpink);
-}
