@@ -21,13 +21,11 @@
 }
 
 .intro-bio-wrap {
-    /* margin-bottom: 1.5rem; */
     width: 100%;
 }
 
 .intro-bio {
     font-size: 1.5rem;
-    font-weight: bold;
     color: var(--text-secondary);
     margin-bottom: .5em;
 }
