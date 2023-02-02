@@ -24,8 +24,8 @@
 }
 
 .projects-img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 500px;
     object-fit: cover;
     transition: 300ms ease;
     background: var(--bg-primary);
