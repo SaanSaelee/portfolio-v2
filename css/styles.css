@@ -138,7 +138,7 @@ body::-webkit-scrollbar-thumb {
 
 .skills-container,
 .projects-container,
-.school-content-wrap, 
+.school-wrap, 
 .certs-content-wrap {
     position: relative;
     display: flex;

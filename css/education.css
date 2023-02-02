@@ -18,10 +18,6 @@
     color: var(--clr-accent-hotpink);
 }
 
-.school {
-    margin: 1em 0;
-}
-
 .school-wrap,
 .certs-wrap {
     background: var(--bg-secondary);
