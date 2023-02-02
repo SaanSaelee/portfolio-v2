@@ -1,4 +1,4 @@
-// Dynamic Copyright Year
+// Dynamic Copyright Year Footer
 const copyright = document.querySelector(".copyright-year");
 const d = new Date();
 const copyrightYear = d.getFullYear();
@@ -6,7 +6,7 @@ const copyrightYear = d.getFullYear();
 copyright.innerHTML = copyrightYear;
 
 // Intersection Observer
-const intro = document.querySelector(".intro-bio");
+const intro = document.querySelectorAll(".intro-bio, .intro-bio-text");
 const skills = document.querySelectorAll(".skills-title, .skills-box");
 const projects = document.querySelectorAll(".projects-title, .project");
 const schools = document.querySelectorAll(
@@ -32,7 +32,10 @@ const observer = new IntersectionObserver((entries, observer) => {
     });
 }, options);
 
-observer.observe(intro);
+intro.forEach((intro) => {
+    observer.observe(intro);
+})
+
 
 skills.forEach((skill) => {
     observer.observe(skill);
