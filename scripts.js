@@ -18,10 +18,10 @@ const contacts = document.querySelectorAll(
 
 const options = {
     root: null,
-    threshold: 0.4,
+    threshold: 0.3,
     rootMargin: "0px",
-};  
-            
+};
+
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
         if (!entry.isIntersecting) {
@@ -34,8 +34,7 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 intro.forEach((intro) => {
     observer.observe(intro);
-})
-
+});
 
 skills.forEach((skill) => {
     observer.observe(skill);
