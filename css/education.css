@@ -23,6 +23,14 @@
     margin-bottom: .5em;
 }
 
+.certs {
+    gap: 50px;
+}
+
+.certs > li {
+    margin-bottom: 1em;
+}
+
 .school-wrap,
 .certs-wrap {
     background: var(--bg-secondary);
@@ -40,8 +48,4 @@
 .certs-wrap {
     display: flex;
     justify-content: center;
-}
-
-.scrum {
-    margin-bottom: 1em;
 }
