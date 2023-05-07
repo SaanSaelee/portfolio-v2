@@ -23,11 +23,7 @@
     margin-bottom: .5em;
 }
 
-.certs {
-    gap: 50px;
-}
-
-.certs > li {
+.certs li {
     margin-bottom: 1em;
 }
 
